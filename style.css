@@ -1,0 +1,116 @@
+body{
+    font-family: "Open-Sans",sans-serif;
+    background-color: black;
+}
+#container{
+    height: 550px;
+    width: 1000px;
+    background-image: url(images/bg1.jpg);
+    margin:20px auto;
+}
+#calculator{
+    height: 500px;
+    width: 400px;
+    background-color: darkgray;
+  border-radius: 15px;
+  margin: 20px 20px;
+  float: left;
+
+}
+#result{
+    height: 120px;
+    background-color: darkkhaki;
+}
+#history{
+    height: 40px;  
+background-color: darkolivegreen;
+}
+#output{
+    height:40px;
+    background-color: darkorange;
+
+}
+#keyboard{
+    height: 480px;
+    
+}
+.operator,.number{
+    width:45px;
+    height:45px;
+    margin: 15px 20px ;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    
+   
+}
+.number{
+    background-color: darkgray;
+}
+.operator:active, .number:active{
+    font-size: 12px;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background-color: darkslateblue;
+
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: orangered;
+
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: blue;
+
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: purple;
+
+}
+button:nth-child(20){
+    font-size: 20px;
+    background-color:palevioletred;
+
+}
+h3{
+    font-size: 25px;
+    color: blanchedalmond;
+}
+#history-memory{
+    height: 500px;
+    width: 400px;
+    background-color: black;
+    float: left;
+    border-radius: 15px;
+    margin: 20px 20px;
+    position: relative;
+    
+
+    
+}
+.outputresult{
+    font-size: 15px;
+    color: blanchedalmond;
+    
+    
+
+}
+.divhover:hover{
+   background-color:grey;
+
+}
+.btn {
+    background-color:black;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    right:    0;
+    bottom:   0;
+    padding: 15px;
+  }
