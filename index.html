@@ -1,4 +1,4 @@
-<html>
+<html >
     <head>
         <link rel="stylesheet" type="text/css" href="style.css"> 
         <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Open+Sans:600,700">
@@ -8,7 +8,7 @@
 
     </head>
     <body>
-        A Simple Calculator
+       
         <!----------start of container ---->
         <div id= "container">
             <!----start of calculator -->
@@ -24,32 +24,44 @@
 
                 </div>
                 <div id="keyboard">
-                    <button class="operator" id="clear">C</button>
-                    <button class="operator" id= "backspace">CE</button>
-                    <button class="operator" id="%"> %</button>
-                    <button class="operator">&#247</button>
+                    
+                    <div class="row">
+                        <div class="column"><button class="operator" id="clear">C</button></div>
+                        <div class="column"><button class="operator" id= "backspace">CE</button></div>
+                        <div class="column"><button class="operator" id="%"> %</button></div>
+                        <div class="column"><button class="operator">&#247</button></div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="column"><button class="number" id="7">7</button></div>
+                        <div class="column"><button class="number" id="8">8</button></div>
+                        <div class="column"><button class="number" id="9">9</button></div>
+                        <div class="column"><button class="operator" id="*">&times</button></div>
+                    </div>
 
-                    <button class="number" id="7">7</button>
-                    <button class="number" id="8">8</button>
-                    <button class="number" id="9">9</button>
-                    <button class="operator" id="*">&times</button>
+                    <div class="row">
+                        <div class="column"><button class="number" id="4">4</button></div>
+                        <div class="column"><button class="number" id="5">5</button></div>
+                        <div class="column"><button class="number" id="6">6</button></div>
+                        <div class="column"><button class="operator" id="-">-</button></div>
+                    </div>
 
-                    <button class="number" id="4">4</button>
-                    <button class="number" id="5">5</button>
-                    <button class="number" id="6">6</button>
-                    <button class="operator" id="-">-</button>
+                    <div class="row">
+                        <div class="column"><button class="number" id="1">1</button></div>
+                        <div class="column"><button class="number" id="2">2</button></div>
+                        <div class="column"><button class="number" id="3">3</button></div>
+                        <div class="column"><button class="operator" id="+">+</button></div>
+                    </div>
 
-                    <button class="number" id="1">1</button>
-                    <button class="number" id="2">2</button>
-                    <button class="number" id="3">3</button>
-                    <button class="operator" id="+">+</button>
+                    <div class="row">
+                        <div class="column"><button class="number" id="+/-">+/-</button></div>
+                        <div class="column"><button class="number" id="0">0</button></div>
+                        <div class="column"> <button class="number" id=".">.</button></div>
+                        <div class="column"><button class="operator" id="=">=</button></div>
+                    </div>
 
-                    <button class="operator" id="+/-">+/-</button>
-                    <button class="number" id="0">0</button>
-                    <button class="number" id=".">.</button>
-                    <button class="operator" id="=">=</button>
-
-
+                
+                
                     
                 </div>
             </div>
@@ -60,11 +72,11 @@
             <div id= "history-memory">
                 <div id="history-tab">
                     <h3>History</h3>
-                     </div>
+                </div>
 
                      <div id="history-previous">
-                        <!-------generate element dynamically-->>
-
+                        <!-------generate element dynamically-->
+                       
                      </div>
 
                      <button class="btn" onclick="deleteHistory()"><i class="fa fa-trash"></i></button>

@@ -124,7 +124,7 @@ function createOutputTag(id){
 
    div1.className ="divhover";
    
-   p1.className = "outputresult";
+   p1.className = "outputhistory";
    p2.className = "outputresult";
 
 
