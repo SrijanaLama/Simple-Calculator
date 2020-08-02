@@ -20,14 +20,12 @@ function printOutput(num){
     }
 }
 function printHistoryMemory(history_result){
-   // var getHistory_result = sessionStorage.getElementById("history");  
+   // var getHistory_result = sessionStorage.getElementById("history"); 
+   //print the results at the side 
     var id = history_result.length - 1;
         createOutputTag(id);
         document.getElementById("output-history" + id ).innerText= history_result[id][0];
         document.getElementById("output-result" + id).innerText=history_result[id] [1];
-
-    
-
 
 
 }
@@ -62,7 +60,11 @@ for(var i=0; i<operator.length; i++){
             
             if(output!=""){
                 output=reverseNumberFormatter(output);
-                history =history + output ;
+                if(history[history.length - 1] == "="){
+                    history="";
+                }
+                history = history + output ;
+                
                 if (this.id == "="){
                 var result = eval(history);
                 history = history + "=";
@@ -72,7 +74,6 @@ for(var i=0; i<operator.length; i++){
                 }
             
             else{
-                
                 history = history + this.id;
                 printHistory(history);
                 printOutput("");
